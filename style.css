@@ -1,0 +1,172 @@
+:root{
+--main: #04BF9D; 
+--secundario: #D99F6C; 
+--terceario: #A6633C; 
+--bg: #40261D; 
+--blanco: #F2F2F2;
+--negro: #000;
+--obscuro:#591902;
+}
+
+body{
+    margin: auto;
+    font-size: 16px; /* */
+    font-family: 'Inter', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory ;
+
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    font-size: 5.4rem;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+.sombra{
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.64);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.64);
+    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.64);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 2rem;
+    
+}
+
+.sombra1{
+    -webkit-box-shadow: inset 0px 15px 15px 3px rgba(0,0,0,0.64);
+    -moz-box-shadow: inset 0px 15px 15px 3px rgba(0,0,0,0.64);
+    box-shadow: inset 0px 15px 15px 3px rgba(0,0,0,0.64);
+}
+
+/*imgen de menu*/
+.icon-image{
+    width: 90%;
+    margin: 1.5rem 0;
+}
+
+.nav-bg{
+    background-color: var(--secundario);
+}
+.navegacion-principal{
+    display: flex;
+    flex-direction:column ;
+}
+
+@media(min-width: 768px){
+    .navegacion-principal{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .contenido-hero{
+        text-align: center;
+    }
+    /*.navegacion-principal a:hover{
+        background-color: var(--terceario);
+    }*/
+}
+
+.navegacion-principal a{
+    display: block;
+    text-align: center;
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem ;
+}
+
+.navegacion-principal a:hover{
+    background-color: var(--terceario);
+    width: 20%;
+    border-radius: 1.9rem;
+}
+
+.contenedor{
+    max-width: 100rem; /*1 rem = 10px*/
+    margin: 1rem auto 0 auto;
+}
+
+.margin{
+    margin: 2rem 0;
+}
+
+    
+/*hero*/
+.hero{
+    background-image: url(img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.contenido-hero{
+    /*position: absolute;*/
+    background-color: rgba(0,0,0,.5);
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contenido-hero h1,
+.contenido-hero p{
+    color: var(--blanco);
+
+}
+.contenedor h2{
+    color: var(--negro);
+    font-size: 4rem;
+
+}
+.recetas{
+    height: 500px;
+}
+.recetas, .nosotros{
+    background-color: var(--obscuro);
+    color: var(--blanco);
+    
+}
+
+.recetas h2, .nosotros h2{
+    color: var(--blanco);
+    font-weight: 700;
+}
+
+.boton-fijo {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 999;
+  }
+  
+  .boton-fijo a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+
+    
+  }
+/*footer*/
+.footer{
+    text-align: center;
+}
